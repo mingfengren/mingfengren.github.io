@@ -14,7 +14,7 @@
   
   
   <title>
-    Archives: 2024 |
+    about |
     
     hello
   </title>
@@ -30,11 +30,13 @@
   
   
     <meta property="og:type" content="website">
-<meta property="og:title" content="hello">
-<meta property="og:url" content="http://example.com/archives/2024/index.html">
+<meta property="og:title" content="about">
+<meta property="og:url" content="http://example.com/about/index.html">
 <meta property="og:site_name" content="hello">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="http://example.com/images/banner.webp">
+<meta property="article:published_time" content="2024-11-17T08:30:15.000Z">
+<meta property="article:modified_time" content="2024-11-17T08:30:15.838Z">
 <meta property="article:author" content="Relife">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://example.com/images/banner.webp">
@@ -148,7 +150,7 @@
 <header id="header">
   
     
-      <img fetchpriority="high" src="/images/banner.webp" alt="">
+      <img fetchpriority="high" src="/images/banner.webp" alt="about">
     
   
   <div id="header-outer">
@@ -157,15 +159,13 @@
         
         
           <a href="/" id="logo">
-            <h1 data-aos="slide-up">Archives</h1>
+            <h1 data-aos="slide-up">about</h1>
           </a>
         
       
       
         
         <h2 id="subtitle-wrap" data-aos="slide-down">
-          
-            <a href="/" id="subtitle">2024</a>
           
         </h2>
       
@@ -175,57 +175,46 @@
 
         <div id="content">
           
-          <section id="main">
-<div class="archives-outer-wrap" data-aos="fade-up">
-  <div class="tag-wrap">
+          <section id="main"><article id="page-" class="h-entry article article-type-page" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-inner" data-aos="fade-up">
+    <div class="article-meta">
+      <div class="article-date">
+  <a href="/about/index.html" class="article-date-link" data-aos="zoom-in">
+    <time datetime="2024-11-17T08:30:15.000Z" itemprop="datePublished">2024-11-17</time>
+    <time style="display: none;" id="post-update-time">2024-11-17</time>
+  </a>
+</div>
+
+      
+
+    </div>
+    <div class="hr-line"></div>
     
-  </div>
-  <div class="category-wrap">
-    
-  </div>
-  
-  
-    
-    
+
+    <div class="e-content article-entry" itemprop="articleBody">
       
       
-      <section class="archives-wrap" data-aos="fade-up">
-        <div class="archive-year-wrap">
-          <a href="/archives/2024" class="archive-year">2024</a>
-        </div>
-        <ul>
-          
-          <li class="archive-article">
-  <div class="archive-article-date-wrap">
-    <a href="/2024/11/17/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/">
-      <time class="dt-published" datetime="2024-11-17T12:16:17.000Z" itemprop="datePublished">11-17</time>
-    </a>
-  </div>
-  
-    <a class="archive-article-title" href="/2024/11/17/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/">第一篇文章</a>
-  
-</li>
+        
+      
+    </div>
+    <footer class="article-footer">
+      
+      
+      
+      
+      
+      
+      
+      
 
-          
-    
-    
-          <li class="archive-article">
-  <div class="archive-article-date-wrap">
-    <a href="/2024/11/16/hello-world/">
-      <time class="dt-published" datetime="2024-11-16T13:41:49.035Z" itemprop="datePublished">11-16</time>
-    </a>
+    </footer>
   </div>
   
-    <a class="archive-article-title" href="/2024/11/16/hello-world/">Hello World</a>
-  
-</li>
 
-          
-          
-        </ul>
-      </section>
-  
-  </div>
+</article>
+
+
+
 
 
 
@@ -462,7 +451,48 @@
     
     
       
+        
+<script src="/js/insert_highlight.js" data-pjax></script>
+
+      
     
+    
+      <script type="module" data-pjax>
+        const PhotoSwipeLightbox = (await safeImport("https://npm.webcache.cn/photoswipe@5.4.4/dist/photoswipe-lightbox.esm.min.js", "sha384-DiL6M/gG+wmTxmCRZyD1zee6lIhawn5TGvED0FOh7fXcN9B0aZ9dexSF/N6lrZi/")).default;
+        
+        const pswp = () => {
+          if (_$$('.article-entry a.article-gallery-item').length > 0) {
+            new PhotoSwipeLightbox({
+              gallery: '.article-entry',
+              children: 'a.article-gallery-item',
+              pswpModule: () => safeImport("https://npm.webcache.cn/photoswipe@5.4.4/dist/photoswipe.esm.min.js", "sha384-WkkO3GCmgkC3VQWpaV8DqhKJqpzpF9JoByxDmnV8+oTJ7m3DfYEWX1fu1scuS4+s")
+            }).init();
+          }
+          if(_$$('.article-gallery a.article-gallery-item').length > 0) {
+            new PhotoSwipeLightbox({
+              gallery: '.article-gallery',
+              children: 'a.article-gallery-item',
+              pswpModule: () => safeImport("https://npm.webcache.cn/photoswipe@5.4.4/dist/photoswipe.esm.min.js", "sha384-WkkO3GCmgkC3VQWpaV8DqhKJqpzpF9JoByxDmnV8+oTJ7m3DfYEWX1fu1scuS4+s")
+            }).init();
+          }
+          window.lightboxStatus = 'done';
+          window.removeEventListener('lightbox:ready', pswp);
+        }
+        if(window.lightboxStatus === 'ready') {
+          pswp()
+        } else {
+          window.addEventListener('lightbox:ready', pswp);
+        }
+      </script>
+      
+
+
+
+
+
+
+
+
     
   </div>
 </div>
