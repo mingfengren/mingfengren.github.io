@@ -33,7 +33,7 @@
 	position: fixed;
 	transform: none;
 	transition: transform .3s ease-in-out, bottom 3s ease-in-out;
-	z-index: 1;
+	z-index: 5;
 }
 
 #waifu.waifu-active {
@@ -66,6 +66,7 @@
 	transition: opacity 1s;
 	width: 250px;
 	word-break: break-all;
+	z-index: 5;
 }
 
 #waifu-tips.waifu-tips-active {
@@ -111,6 +112,7 @@
 	height: 15px;
 	width: 15px;
 	transition: fill .3s;
+	z-index: 5;
 }
 
 #waifu-tool svg:hover {
